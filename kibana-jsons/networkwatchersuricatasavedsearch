@@ -1,0 +1,26 @@
+[
+  {
+    "_id": "5d9bc360-f230-11e6-a9f5-7994c2b58fa3",
+    "_type": "search",
+    "_source": {
+      "title": "Alert Summary",
+      "description": "",
+      "hits": 0,
+      "columns": [
+        "alert.signature",
+        "src_ip",
+        "src_port",
+        "dest_ip",
+        "dest_port"
+      ],
+      "sort": [
+        "timestamp",
+        "desc"
+      ],
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"logstash-*\",\"query\":{\"query_string\":{\"analyze_wildcard\":true,\"query\":\"event_type: alert\"}},\"filter\":[],\"highlight\":{\"pre_tags\":[\"@kibana-highlighted-field@\"],\"post_tags\":[\"@/kibana-highlighted-field@\"],\"fields\":{\"*\":{}},\"require_field_match\":false,\"fragment_size\":2147483647}}"
+      }
+    }
+  }
+]

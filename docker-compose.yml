@@ -1,0 +1,32 @@
+version: '2'
+services:
+  elasticsearch:
+    build: docker/elasticsearch
+    networks: 
+      - be
+  logstash:
+    build: docker/logstash
+    networks:
+      - be
+    volumes: 
+      - logs:/var/log/suricata:rw
+  kibana:
+    build: docker/kibana
+    networks:
+      - be
+    ports:
+      - "5601:5601"
+  suricata:
+    network_mode: "host"
+    cap_add:
+     - NET_ADMIN
+     - SYS_NICE
+     - NET_RAW
+    build: docker/suricata
+    volumes:
+     - logs:/var/log/suricata
+networks:
+  be:
+    driver: bridge
+volumes:
+  logs:

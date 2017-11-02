@@ -1,0 +1,26 @@
+[
+  {
+    "_id": "1b7bbfc0-f227-11e6-a9f5-7994c2b58fa3",
+    "_type": "dashboard",
+    "_source": {
+      "title": "Sample Suricata Alert Dashboard",
+      "hits": 0,
+      "description": "",
+      "panelsJSON": "[{\"col\":1,\"id\":\"e6e7aa80-f226-11e6-a9f5-7994c2b58fa3\",\"panelIndex\":1,\"row\":1,\"size_x\":12,\"size_y\":6,\"type\":\"visualization\"},{\"col\":1,\"id\":\"72a7d2b0-f22d-11e6-a9f5-7994c2b58fa3\",\"panelIndex\":2,\"row\":7,\"size_x\":7,\"size_y\":3,\"type\":\"visualization\"},{\"col\":8,\"id\":\"0618fd90-f22d-11e6-a9f5-7994c2b58fa3\",\"panelIndex\":3,\"row\":7,\"size_x\":5,\"size_y\":3,\"type\":\"visualization\"},{\"col\":1,\"id\":\"cadb35c0-f22e-11e6-a9f5-7994c2b58fa3\",\"panelIndex\":4,\"row\":10,\"size_x\":6,\"size_y\":3,\"type\":\"visualization\"},{\"col\":7,\"id\":\"e27ed880-f22e-11e6-a9f5-7994c2b58fa3\",\"panelIndex\":5,\"row\":10,\"size_x\":6,\"size_y\":3,\"type\":\"visualization\"},{\"col\":1,\"id\":\"0162b690-f22f-11e6-a9f5-7994c2b58fa3\",\"panelIndex\":6,\"row\":13,\"size_x\":6,\"size_y\":3,\"type\":\"visualization\"},{\"col\":7,\"id\":\"157a4c60-f22f-11e6-a9f5-7994c2b58fa3\",\"panelIndex\":7,\"row\":13,\"size_x\":6,\"size_y\":3,\"type\":\"visualization\"},{\"col\":1,\"columns\":[\"alert.signature\",\"src_ip\",\"src_port\",\"dest_ip\",\"dest_port\"],\"id\":\"5d9bc360-f230-11e6-a9f5-7994c2b58fa3\",\"panelIndex\":8,\"row\":16,\"size_x\":12,\"size_y\":4,\"sort\":[\"timestamp\",\"desc\"],\"type\":\"search\"}]",
+      "optionsJSON": "{\"darkTheme\":false}",
+      "uiStateJSON": "{\"P-1\":{\"mapCenter\":[53.225768435790194,1.0546875],\"mapZoom\":3},\"P-2\":{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}},\"P-7\":{\"vis\":{\"colors\":{\"80\":\"#6ED0E0\"}}}}",
+      "version": 1,
+      "timeRestore": true,
+      "timeTo": "now-1w/w",
+      "timeFrom": "now-1w/w",
+      "refreshInterval": {
+        "display": "Off",
+        "pause": false,
+        "value": 0
+      },
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"filter\":[{\"query\":{\"query_string\":{\"analyze_wildcard\":true,\"query\":\"*\"}}}]}"
+      }
+    }
+  }
+]
